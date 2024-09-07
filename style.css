@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+  }
+  
+  /* Main layout (centers content vertically and horizontally) */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Social Media Container */
+  .social-media {
+    background-color: black;
+    height: 92vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Profile Card Container */
+  .container {
+    background-color: rgb(43, 46, 49); /* Dark gray background */
+    border-radius: 20px; /* Rounded corners */
+    width: 23vw;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    align-items: center;
+    padding: 20px; /* Added padding for inner spacing */
+  }
+  
+  /* Profile Image */
+  .container img {
+    margin: 20px;
+    border-radius: 100px; /* Makes image circular */
+  }
+  
+  /* Name and Address */
+  .name {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Space between name and address */
+  }
+  
+  .adress {
+    font-weight: 600;
+    font-size: 14px;
+    color: yellow !important;
+    margin-bottom: 20px; /* Space before links */
+  }
+  
+  /* Description Paragraph */
+  p {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(212, 216, 218);
+  }
+  
+  /* Social Media Links List */
+  ul {
+    list-style-type: none; /* Removes default bullet points */
+    display: grid; /* Single-column grid */
+    grid-template-columns: 1fr; /* One item per row */
+    grid-gap: 6px; /* Spacing between links */
+    padding: 0; /* Removes default padding */
+  }
+  
+  /* Individual List Items (Links) */
+  ul li {
+    text-align: center;
+    border: 2px solid black;
+    padding: 3px 20px; /* Inner spacing for better click area */
+    border-radius: 10px; /* Rounded corners */
+    font-weight: 700;
+    height: 27px; /* Fixed height for uniformity */
+    width: 150px; /* Fixed width */
+    background-color: rgb(97, 100, 103); /* Gray background */
+    margin: 0 auto; /* Center the buttons horizontally */
+  }
+  
+  /* Anchor (Link) Style */
+  ul li a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent */
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Medium devices (tablets, landscape phones) */
+  @media (max-width: 768px) {
+    .container {
+      width: 40vw; /* Increase container width for medium screens */
+    }
+  
+    ul li {
+      width: 120px; /* Reduce link width for smaller screens */
+      height: 25px; /* Adjust height */
+    }
+  }
+  
+  /* Small devices (portrait phones) */
+  @media (max-width: 480px) {
+    .container {
+      width: 80vw; /* Full width for small screens */
+    }
+  
+    ul li {
+      width: 100px; /* Further reduce width for smaller buttons */
+      height: 22px; /* Adjust height for smaller screen */
+    }
+  
+    .name {
+      font-size: 1em; /* Reduce font size for name */
+    }
+  
+    .adress {
+      font-size: 12px; /* Reduce font size for address */
+    }
+  }
+  
